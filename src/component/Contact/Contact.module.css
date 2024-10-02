@@ -1,0 +1,71 @@
+@import "../../Vars.css";
+
+
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .leftSide {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .leftSide h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .leftSide a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .rightSide {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: white;
+    background: rgba(249, 148, 185, 0.7);    ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #fedcf0;
+  }
+  

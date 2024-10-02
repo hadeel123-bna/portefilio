@@ -1,0 +1,66 @@
+@import "../../Vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index: 2;
+    margin: 0 10%;
+}
+
+.title {
+    font-size: 30px; /* Ajout de l'unité px */
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+.list a {
+    font-size: 25px;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* Correction de la syntaxe @media */
+@media screen and (max-width: 830px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+
+   
+
+    .list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgb(240, 177, 177); /* Couleur unie pour éviter l'erreur */
+    }
+}
+.logo{
+    width: 100px;
+}
